@@ -6,7 +6,8 @@
 }
 
 body {
-  background: #f0f2f5;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Poppins', sans-serif;
 }
 
 .App {
@@ -18,11 +19,11 @@ body {
 }
 
 .calculator {
-  background: #17181a;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 20px;
   width: 100%;
   max-width: 400px;
@@ -62,17 +63,19 @@ body {
   border-radius: 10px;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   color: white;
-  background: #2c2d30;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
 }
 
 .button:hover {
-  background: #3f4043;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
 }
 
 .button:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 .span-two {
@@ -80,11 +83,7 @@ body {
 }
 
 .operator {
-  background: #4285f4;
-}
-
-.operator:hover {
-  background: #5a95f5;
+  background: linear-gradient(145deg, #4285f4, #5a95f5);
 }
 
 .clear, .delete {
@@ -96,9 +95,17 @@ body {
 }
 
 .equals {
-  background: #34a853;
+  background: linear-gradient(145deg, #34a853, #46b465);
 }
 
 .equals:hover {
   background: #46b465;
+}
+
+.signature {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
